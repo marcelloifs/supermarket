@@ -1,0 +1,8 @@
+<app-search (searchProduct)="searchProducts($event)">
+</app-search>
+<div class="productsWrap">
+  <ng-container *ngFor="let product of productsFiltered">
+    <app-item [product]="product" [setWidth]="true"></app-item>
+  </ng-container>
+</div>
+

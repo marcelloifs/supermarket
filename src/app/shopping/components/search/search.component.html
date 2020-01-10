@@ -1,0 +1,17 @@
+<div class="search__wrapper">
+
+    <input
+        field-input
+        #searchRef
+        type="text"
+        autocomplete="disabled"
+        id="searchProduct"
+        (input)="onSearchChange($event.target.value)">
+    <app-button
+        class="search-button"
+        type="primary"
+        maxlength=255>
+        <span>Search Products</span>
+    </app-button>
+
+</div>

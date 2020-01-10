@@ -1,0 +1,6 @@
+<div class="product-container" (click)="enableLinks && openProductDetails(product?.product_id)" #productContainer>
+    <img src="{{product?.image}}" class="productImage">
+    <span> {{product?.name}} </span>
+    <span> {{product?.price | currency:'CAD'}} </span>
+    <span *ngIf="showDescription" class="descriptionClass"> {{product?.description}} </span>
+</div>

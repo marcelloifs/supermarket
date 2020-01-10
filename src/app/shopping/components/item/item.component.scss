@@ -1,0 +1,47 @@
+/* Desktop Styles */
+@media only screen and (min-width: 800x) {
+  .product-container {
+    flex: 3 /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 800x) {
+  .product-container {
+    flex: 3;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .product-container {
+    width: 50%;
+  }
+}
+
+.descriptionClass{
+  flex: auto;
+}
+
+.product-container {
+margin: 20px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-basis: 100%;
+}
+
+.productImage{
+  max-width:50%;
+  height:auto;
+}
+
+.item{
+  padding:50px
+}
+
+.productImage{
+ float: left;
+}

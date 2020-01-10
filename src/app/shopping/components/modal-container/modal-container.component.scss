@@ -1,0 +1,66 @@
+$text-color: #414042;
+$border-width: 2px;
+$popup-background: white;
+$primary-background: #3F8532;
+.modal-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 820px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 260px;
+    z-index: 10010;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: $text-color;
+    background: $popup-background;
+    border: $border-width solid $primary-background;
+
+    .modal-header {
+        overflow-y: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: $primary-background;
+
+        .modal-title {
+            white-space: nowrap;
+            text-transform: uppercase;
+            padding: 0px;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .modal-close {
+            margin: 10px;
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background: white;
+            color: $primary-background;
+            font-size: 40px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+
+    .modal-body {
+        margin-left: 15px;
+        padding: 20px;
+
+        .primary__message {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .secondary__message {
+            font-size: 16px;
+        }
+    }
+}
+
