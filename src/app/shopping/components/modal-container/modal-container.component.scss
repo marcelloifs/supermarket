@@ -17,6 +17,7 @@ $primary-background: #3F8532;
     color: $text-color;
     background: $popup-background;
     border: $border-width solid $primary-background;
+    transform: translate(-50%, -50%);
 
     .modal-header {
         overflow-y: initial;
@@ -52,15 +53,6 @@ $primary-background: #3F8532;
     .modal-body {
         margin-left: 15px;
         padding: 20px;
-
-        .primary__message {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .secondary__message {
-            font-size: 16px;
-        }
     }
 }
 

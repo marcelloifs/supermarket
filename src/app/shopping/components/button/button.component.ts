@@ -15,7 +15,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
     styleUrls: ['./button.component.scss']
   })
 export class ButtonComponent implements OnInit {
-    @ViewChild('buttonRef', {static: false}) buttonRef?: ElementRef;
+    @ViewChild('buttonRef') buttonRef?: ElementRef;
     @Input() disabled = false;
     @Input() focus = false;
 

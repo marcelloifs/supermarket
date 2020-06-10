@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/assets",
               "src/config.js",
@@ -47,7 +47,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -131,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "shopping-project"
+  "defaultProject": "shopping-project",
+  "cli": {
+    "analytics": "9bac9307-7b87-4ed1-98d9-8d32938b6b2f"
+  }
 }

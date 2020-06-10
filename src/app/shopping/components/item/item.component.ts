@@ -18,7 +18,7 @@ import { ModalContainerComponent } from '../modal-container/modal-container.comp
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements AfterViewInit {
-  @ViewChild('productContainer', { static: false }) productContainer: ElementRef | null = null;
+  @ViewChild('productContainer') productContainer: ElementRef | null = null;
   @Input() product?: Product;
   @Input() showDescription = false;
   @Input() enableLinks = true;
